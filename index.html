@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML TAGS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- SOME PARENTS TAG ~ HEADER, NAV, SECTION, ARTICLE, ASIDE, FOOTER -->
+    <!-- SOME CHILDES TAG ~ pre, b, i, small, mark, br, del, sub, sup,blockquote, abbr, cite, bdo, address, q, img, a -->
+
+
     <!--Audio-->
+    <h2>Audio</h2>
+    <hr>
     <audio controls autoplay>
         <source src="song.mp3" type="audio/mpeg"></source>
     </audio>
@@ -17,6 +24,8 @@
     <br>
 
     <!--Video-->
+    <h2>Video</h2>
+    <hr>
     <video  height="300px;" controls autoplay>
         <source src="video.mp4" type="video/mp4"></source>
     </video>
@@ -25,8 +34,10 @@
     <br>
      
     <!--Form-->
+    <h2>The form, fieldset, legend, label, input </h2>
+    <hr>
     <form action="#" method="post">
-        <fieldset>
+        <fieldset style="padding: 10px;">
             <legend>Personal Information</legend>
             <label for="first_name">First Name : </label>
             <br>
@@ -45,15 +56,19 @@
             <br>
             <label for="pass">Password : </label>
             <br>
-            <input type="password" name="Pass" id="pass" placeholder="Enter Your Password" required>
+            <input type="password" name="Pass" id="pass" placeholder="Enter Your Password" required minlength="8">
             <br>
             <br>
             <input type="submit" value="Submit">
+            <br>
+            <br>
+            <input type="reset" value="reset">
         </fieldset>
     </form>
 
     <!--Input Type Radio-->
     <h2>Display Radio Button</h2>
+    <hr>
     <form action="#" method="post">
         <p>Please select your favorite Web language : </p>
         <input type="radio" id="html" name="favorite_language" value="HTML">
@@ -68,6 +83,7 @@
 
     <!--Input Type Checkbox-->
     <h2>Checkboxes </h2>
+    <hr>
     <form action="#" method="post">
         <p>Please select your favorite Web language : </p>
         <input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
@@ -80,5 +96,28 @@
         <label for="vehicle3">I have a boat</label>
     </form>
 
+    <!--The Select Element-->
+    <h2>The Select Element</h2>
+    <hr>
+    <p>The select element is used to create a drop-down list</p>
+    <form action="#" method="post">
+        <label for="cars">Choose a car : </label>
+        <select name="cars" id="cars  ">
+            <option value="volvo">Volvo</option>
+            <option value="audi">Audi</option>
+            <option value="tesla">Tesla</option>
+            <option value="marcedies">Marcedies</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!--iframe-->
+    <h2>Iframe</h2>
+    <hr>
+    <iframe src="https://www.cssportal.com/css-clip-path-generator/" frameborder="1" width="500" height="500" name="iframe"></iframe>
+    <br>
+    <a href="https://www.pexels.com/" target="iframe">Click Here and Change iframe Website</a>
 </body>
 </html>
